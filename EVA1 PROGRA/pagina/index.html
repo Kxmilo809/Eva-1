@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFood - Organización contra el desperdicio alimentario</title>
+    <link rel="stylesheet" href="https://ecofood.com">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Overlay -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-container">
+            <span class="close-btn" id="closeLogin">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Usuario" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit">Acceder</button>
+                <p class="register-link">¿No tienes cuenta? <a href="#" id="goToRegister">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Overlay (Nuevo) -->
+    <div class="login-overlay" id="registerOverlay">
+        <div class="login-container">
+            <span class="close-btn" id="closeRegister">&times;</span>
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirmar contraseña" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Header con botones de auth -->
+    <header>
+        <div class="header-content">
+            <div class="auth-buttons">
+                <button class="auth-btn" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+                <button class="auth-btn" id="registerBtn"><i class="fas fa-user-plus"></i> Registrarse</button>
+            </div>
+            <h1>EcoFood</h1>
+            <h2>¿Quienes somos?</h2>
+            <p>Estupor completo el desperdicio de alimentos con educción, tecnología y soluciones prácticas. Basta un mano más sostenible, ayudando a comunicarse a optimizar recursos y reducir residuos.</p>
+            <p>Estupor de expertos en ambiente, tecnología y desarrollo social trabajando por un impacto global.</p>
+        </div>
+    </header>
+    
+    <!-- Resto del contenido se mantiene exactamente igual -->
+    <main class="container">
+        <section class="card">
+            <h2>Nuestra Misión y Visión</h2>
+            <p>Servidistas y movidas a comandadores locales y prácticos son los ingresos de revisión e desigualdad de alimentos. La nación humanitaria practica la posibilidad de investigar una primera análisis básica sostenible, para mejorar la seguridad alimentaria y participar en medio ambiente.</p>
+            <p>Un mundo en el cual los alimentos se aduey y generan responsablemente, con seguridad alimentaria (el sentido para todos) y desigualdad alimentariamente, generando impacto público en el medio ambiente, la Convenna y la sociedad.</p>
+        </section>
+        
+        <section class="card">
+            <h2>Que hacemos</h2>
+            <div class="que-hacemos">
+                <div class="columna">
+                    <div class="icon-box"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Educamos:</h3>
+                    <ul>
+                        <li>Ofrecemos materiales educativos gratuitos</li>
+                        <li>Talleres comunitarios para fomentar prácticas sostenibles</li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                    <h3>Conectamos:</h3>
+                    <ul>
+                        <li>Promovemos alianzas entre productores, comerciales y consumidores</li>
+                        <li>Reducción de excedentes y máximo aprovechamiento de alimentos</li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Innovamos:</h3>
+                    <ul>
+                        <li>Desarrollo de aplicaciones móviles y plataformas web</li>
+                        <li>Soluciones pedagógicas para reducir el desperdicio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card impacto">
+            <h2>Impacto del desperdicio alimentario</h2>
+            <ul>
+                <li><i class="fas fa-exclamation-circle"></i> 1/3 de los alimentos producidos globalmente se desperdician (FAO, 2021)</li>
+                <li><i class="fas fa-smog"></i> Genera 8-10% de las emisiones mundiales de GEI</li>
+                <li><i class="fas fa-utensils"></i> 820+ millones sufren inseguridad alimentaria</li>
+                <li><i class="fas fa-seedling"></i> Reducir 25% el desperdicio podría alimentar a 870 millones</li>
+            </ul>
+        </section>
+        
+        <section class="card ayuda">
+            <h2>Como puedes ayudar</h2>
+            <ul>
+                <li><i class="fas fa-clipboard-list"></i> Construir responsablemente: Planifica carpetas y sus alimentos eficientemente</li>
+                <li><i class="fas fa-store"></i> Apoyar iniciativas locales: Compra productos locales y de temporada</li>
+                <li><i class="fas fa-comments"></i> Diferirse económico: Comprarte información en tu comunidad</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Contacto</h3>
+            <div class="contacto">
+                <div><i class="fas fa-map-marker-alt"></i> Directora Cina Web 112, Quadri Sostenible</div>
+                <div><i class="fas fa-envelope"></i> Email: contactecofood@org.com</div>
+                <div><i class="fas fa-phone"></i> Teléfono: +56 9 1234 5678</div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
